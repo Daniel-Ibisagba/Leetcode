@@ -1,5 +1,6 @@
 package com.fishercoder.solutions;
 
+import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -18,7 +19,7 @@ public class _384 {
 
         public Solution1(int[] nums) {
             original = nums;
-            random = new Random();
+            random = new SecureRandom();
             combinations = buildAllComb(nums);
         }
 
@@ -84,7 +85,7 @@ public class _384 {
 
         public Solution2(int[] nums) {
             this.nums = nums;
-            this.random = new Random();
+            this.random = new SecureRandom();
         }
 
         /**

@@ -1,5 +1,6 @@
 package com.fishercoder.solutions;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 public class _528 {
@@ -8,7 +9,7 @@ public class _528 {
         int[] preSums;
 
         public Solution1(int[] w) {
-            this.random = new Random();
+            this.random = new SecureRandom();
             for (int i = 1; i < w.length; ++i) {
                 w[i] += w[i - 1];
             }

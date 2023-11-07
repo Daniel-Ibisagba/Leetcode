@@ -1,5 +1,6 @@
 package com.fishercoder.solutions;
 
+import java.security.SecureRandom;
 import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
@@ -19,7 +20,7 @@ public class _380 {
 
             public RandomizedSet() {
                 map = new HashMap<>();
-                random = new Random();
+                random = new SecureRandom();
                 list = new ArrayList<>();
             }
 
