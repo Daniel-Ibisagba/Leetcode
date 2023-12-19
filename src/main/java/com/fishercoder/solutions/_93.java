@@ -43,7 +43,7 @@ public class _93 {
 
         private boolean isValid(String oneByte) {
             if (oneByte.charAt(0) == '0') {
-                return oneByte.equals("0");
+                return "0".equals(oneByte);
             }
             int num = Integer.valueOf(oneByte);
             return (num >= 0 && num < 256);

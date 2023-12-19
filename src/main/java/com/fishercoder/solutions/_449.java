@@ -139,11 +139,11 @@ public class _449 {
             queue.offer(root);
             for (int i = 1; i < nodes.length; i++) {
                 TreeNode curr = queue.poll();
-                if (!nodes[i].equals("#")) {
+                if (!"#".equals(nodes[i])) {
                     curr.left = new TreeNode(Integer.valueOf(nodes[i]));
                     queue.offer(curr.left);
                 }
-                if (!nodes[++i].equals("#")) {
+                if (!"#".equals(nodes[++i])) {
                     curr.right = new TreeNode(Integer.valueOf(nodes[i]));
                     queue.offer(curr.right);
                 }
@@ -184,7 +184,7 @@ public class _449 {
             // remove the node
             String nodeLeftToSerialize = nodesLeft.poll();
             // base case
-            if (nodeLeftToSerialize.equals(NULL_SYMBOL)) {
+            if (NULL_SYMBOL.equals(nodeLeftToSerialize)) {
                 return null;
             }
             TreeNode newNode = new TreeNode(Integer.valueOf(nodeLeftToSerialize));

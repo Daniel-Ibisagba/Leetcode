@@ -21,7 +21,7 @@ public class _482 {
                     stringBuilder.append('-');
                 }
             }
-            if (stringBuilder.length() > 1 && stringBuilder.substring(stringBuilder.length() - 1).equals("-")) {
+            if (stringBuilder.length() > 1 && "-".equals(stringBuilder.substring(stringBuilder.length() - 1))) {
                 return stringBuilder.reverse().substring(1);
             }
             return stringBuilder.reverse().toString();

@@ -53,11 +53,11 @@ public class _297 {
             queue.offer(root);
             for (int i = 1; i < nodes.length; i++) {
                 TreeNode curr = queue.poll();
-                if (!nodes[i].equals("#")) {
+                if (!"#".equals(nodes[i])) {
                     curr.left = new TreeNode(Integer.parseInt(nodes[i]));
                     queue.offer(curr.left);
                 }
-                if (!nodes[++i].equals("#")) {
+                if (!"#".equals(nodes[++i])) {
                     curr.right = new TreeNode(Integer.parseInt(nodes[i]));
                     queue.offer(curr.right);
                 }

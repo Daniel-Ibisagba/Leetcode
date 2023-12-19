@@ -16,7 +16,7 @@ public class _151 {
             }
             Deque<String> stack = new ArrayDeque<>();
             for (String word : words) {
-                if (!word.equals("")) {
+                if (!"".equals(word)) {
                     stack.offer(word);
                 }
             }

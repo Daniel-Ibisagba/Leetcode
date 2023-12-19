@@ -41,7 +41,7 @@ public class _17 {
          */
         public List<String> letterCombinations(String digits) {
             List<String> ans = new ArrayList<>();
-            if (digits.length() == 0 || digits.equals("")) {
+            if (digits.length() == 0 || "".equals(digits)) {
                 return ans;
             }
             String[] options = new String[]{"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
@@ -70,7 +70,7 @@ public class _17 {
          */
         public List<String> letterCombinations(String digits) {
             List<String> ans = new ArrayList<>();
-            if (digits.equals("")) {
+            if ("".equals(digits)) {
                 return ans;
             }
             String[] buttons = new String[]{"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};

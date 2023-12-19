@@ -34,7 +34,7 @@ public class _388 {
 
                 nextLevel = 0;
                 i = i + 1;//increment one to let it pass "\n" and start from "\t"
-                while (i < input.length() - 1 && input.substring(i, i + 1).equals("\t")) {
+                while (i < input.length() - 1 && "\t".equals(input.substring(i, i + 1))) {
                     nextLevel++;
                     i = i + 1;
                 }

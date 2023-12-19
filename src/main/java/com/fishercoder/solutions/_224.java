@@ -26,25 +26,25 @@ public class _224 {
                         i--;
                     } else if (s.charAt(i) == ')') {
                         int result = 0;
-                        while (!stack.isEmpty() && !stack.peekLast().equals("(")) {
+                        while (!stack.isEmpty() && !"(".equals(stack.peekLast())) {
                             String numStr = stack.pollLast();
                             int numInt = Integer.parseInt(numStr);
-                            if (!stack.isEmpty() && (stack.peekLast().equals("-") || stack.peekLast().equals("+"))) {
+                            if (!stack.isEmpty() && ("-".equals(stack.peekLast()) || "+".equals(stack.peekLast()))) {
                                 String operator = stack.pollLast();
-                                if (operator.equals("+")) {
+                                if ("+".equals(operator)) {
                                     result += numInt;
-                                } else if (operator.equals("-")) {
+                                } else if ("-".equals(operator)) {
                                     result -= numInt;
                                 }
                             } else {
                                 result += numInt;
-                                if (!stack.isEmpty() && stack.peekLast().equals("(")) {
+                                if (!stack.isEmpty() && "(".equals(stack.peekLast())) {
                                     stack.pollLast();
                                     break;
                                 }
                             }
                         }
-                        if (!stack.isEmpty() && stack.peekLast().equals("(")) {
+                        if (!stack.isEmpty() && "(".equals(stack.peekLast())) {
                             stack.pollLast();
                         }
                         stack.addLast(result + "");
@@ -57,9 +57,9 @@ public class _224 {
                 int numInt = Integer.parseInt(numStr);
                 if (!stack.isEmpty()) {
                     String operator = stack.pollLast();
-                    if (operator.equals("+")) {
+                    if ("+".equals(operator)) {
                         result += numInt;
-                    } else if (operator.equals("-")) {
+                    } else if ("-".equals(operator)) {
                         result -= numInt;
                     }
                 } else {

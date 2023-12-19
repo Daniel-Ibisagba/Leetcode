@@ -11,7 +11,7 @@ public class _1275 {
                     board[moves[i][0]][moves[i][1]] = "O";
                 }
                 if (i > 3) {
-                    if (!wins(board).equals("")) {
+                    if (!"".equals(wins(board))) {
                         return wins(board);
                     }
                 }
@@ -54,7 +54,7 @@ public class _1275 {
         }
 
         private String getWinner(String str) {
-            if (str.equals("X")) {
+            if ("X".equals(str)) {
                 return "A";
             } else {
                 return "B";

@@ -79,7 +79,7 @@ public class _721 {
             for (List<String> account : accounts) {
                 String name = "";
                 for (String email : account) {
-                    if (name.equals("")) {
+                    if ("".equals(name)) {
                         name = email;
                         continue;
                     }

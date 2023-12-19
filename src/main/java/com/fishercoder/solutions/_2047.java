@@ -9,7 +9,7 @@ public class _2047 {
                 int hyphenCount = 0;
                 int punctuationMarkCount = 0;
                 boolean valid = true;
-                if (token.isEmpty() || token.equals("") || token.length() == 0) {
+                if (token.isEmpty() || "".equals(token) || token.length() == 0) {
                     continue;
                 }
                 for (int i = 0; i < token.length(); i++) {

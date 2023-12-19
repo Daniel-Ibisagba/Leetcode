@@ -112,7 +112,7 @@ public class _79 {
         int[] directions = new int[]{0, 1, 0, -1, 0};
 
         private boolean existByDfs(char[][] board, int startI, int startJ, String word, boolean[][] visited, int m, int n) {
-            if (word.equals("")) {
+            if ("".equals(word)) {
                 return true;
             }
             for (int i = 0; i < directions.length - 1; i++) {
