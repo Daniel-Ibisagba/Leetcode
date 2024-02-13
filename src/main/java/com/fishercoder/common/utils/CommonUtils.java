@@ -2,6 +2,7 @@ package com.fishercoder.common.utils;
 
 import com.fishercoder.common.classes.Interval;
 import com.fishercoder.common.classes.ListNode;
+import java.security.SecureRandom;
 
 import java.util.ArrayList;
 import java.util.Deque;
@@ -105,7 +106,7 @@ public class CommonUtils {
     // this one has two other overloaded methods as above
     public static List<Integer> randomIntArrayGenerator(int size, int upperBound) {
         List<Integer> result = new ArrayList<Integer>();
-        Random random = new Random();
+        Random random = new SecureRandom();
         for (int i = 0; i < size; i++) {
             int randomInt = random.nextInt(upperBound);
             result.add(randomInt);
