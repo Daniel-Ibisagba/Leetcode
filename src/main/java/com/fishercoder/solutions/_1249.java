@@ -68,10 +68,10 @@ public class _1249 {
             StringBuilder sb = new StringBuilder();
             while (!stack.isEmpty()) {
                 String str = stack.pollLast();
-                if (str.equals(")")) {
+                if (")".equals(str)) {
                     right++;
                     sb.append(str);
-                } else if (str.equals("(")) {
+                } else if ("(".equals(str)) {
                     if (right > left) {
                         sb.append(str);
                         left++;

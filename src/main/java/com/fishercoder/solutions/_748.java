@@ -13,7 +13,7 @@ public class _748 {
             String result = "";
             for (String word : words) {
                 if (isComplete(word, counts)) {
-                    if (result.equals("")) {
+                    if ("".equals(result)) {
                         result = word;
                     } else if (word.length() < result.length()) {
                         result = word;

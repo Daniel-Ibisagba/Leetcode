@@ -62,7 +62,7 @@ public class _76 {
             while (right < s.length()) {
                 sCount[s.charAt(right)]++;
                 while (isValid(sCount, tCount)) {
-                    if (right - left < ans.length() || ans.equals("")) {
+                    if (right - left < ans.length() || "".equals(ans)) {
                         ans = s.substring(left, right + 1);
                     }
                     sCount[s.charAt(left)]--;

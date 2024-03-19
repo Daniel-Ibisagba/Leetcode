@@ -16,11 +16,11 @@ public class _150 {
                     int secondNum = stack.pop();
                     int firstNum = stack.pop();
                     int result;
-                    if (token.equals("+")) {
+                    if ("+".equals(token)) {
                         result = firstNum + secondNum;
-                    } else if (token.equals("-")) {
+                    } else if ("-".equals(token)) {
                         result = firstNum - secondNum;
-                    } else if (token.equals("*")) {
+                    } else if ("*".equals(token)) {
                         result = firstNum * secondNum;
                     } else {
                         result = firstNum / secondNum;

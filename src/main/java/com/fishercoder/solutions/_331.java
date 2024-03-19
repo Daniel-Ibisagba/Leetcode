@@ -17,7 +17,7 @@ public class _331 {
             String[] pre = preorder.split(",");
             Deque<String> stack = new ArrayDeque<>();
             for (int i = 0; i < pre.length; i++) {
-                while (pre[i].equals("#") && !stack.isEmpty() && stack.peekLast().equals("#")) {
+                while ("#".equals(pre[i]) && !stack.isEmpty() && "#".equals(stack.peekLast())) {
                     stack.pollLast();
                     if (stack.isEmpty()) {
                         return false;
@@ -26,7 +26,7 @@ public class _331 {
                 }
                 stack.addLast(pre[i]);
             }
-            return stack.size() == 1 && stack.peekLast().equals("#");
+            return stack.size() == 1 && "#".equals(stack.peekLast());
         }
     }
 

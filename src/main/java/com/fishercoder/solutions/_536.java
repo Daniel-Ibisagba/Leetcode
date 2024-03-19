@@ -12,7 +12,7 @@ public class _536 {
          * recursive solution
          */
         public TreeNode str2tree(String s) {
-            if (s.equals("")) {
+            if ("".equals(s)) {
                 return null;
             }
             int firstParen = s.indexOf("(");

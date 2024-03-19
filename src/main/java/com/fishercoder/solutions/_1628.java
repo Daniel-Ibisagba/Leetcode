@@ -38,11 +38,11 @@ public class _1628 {
                 String op = node.val;
                 int left = dfs(node.left);
                 int right = dfs(node.right);
-                if (op.equals("+")) {
+                if ("+".equals(op)) {
                     return left + right;
-                } else if (op.equals("-")) {
+                } else if ("-".equals(op)) {
                     return left - right;
-                } else if (op.equals("*")) {
+                } else if ("*".equals(op)) {
                     return left * right;
                 } else {
                     return left / right;

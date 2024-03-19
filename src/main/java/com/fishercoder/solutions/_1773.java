@@ -7,11 +7,11 @@ public class _1773 {
         public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
             int match = 0;
             for (List<String> item : items) {
-                if (ruleKey.equals("type") && item.get(0).equals(ruleValue)) {
+                if ("type".equals(ruleKey) && item.get(0).equals(ruleValue)) {
                     match++;
-                } else if (ruleKey.equals("color") && item.get(1).equals(ruleValue)) {
+                } else if ("color".equals(ruleKey) && item.get(1).equals(ruleValue)) {
                     match++;
-                } else if (ruleKey.equals("name") && item.get(2).equals(ruleValue)) {
+                } else if ("name".equals(ruleKey) && item.get(2).equals(ruleValue)) {
                     match++;
                 }
             }

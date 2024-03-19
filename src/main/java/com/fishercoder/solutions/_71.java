@@ -13,7 +13,7 @@ public class _71 {
             Deque<String> stack = new LinkedList<>();
             Set<String> skipSet = new HashSet<>(Arrays.asList("..", ".", ""));
             for (String dir : path.split("/")) {
-                if (dir.equals("..") && !stack.isEmpty()) {
+                if ("..".equals(dir) && !stack.isEmpty()) {
                     stack.pop();
                 } else if (!skipSet.contains(dir)) {
                     stack.push(dir);

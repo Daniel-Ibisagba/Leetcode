@@ -5,11 +5,11 @@ public class _1598 {
         public int minOperations(String[] logs) {
             int steps = 0;
             for (String log : logs) {
-                if (log.equals("../")) {
+                if ("../".equals(log)) {
                     if (steps > 0) {
                         steps--;
                     }
-                } else if (log.equals("./")) {
+                } else if ("./".equals(log)) {
                     //do nothing
                 } else {
                     steps++;

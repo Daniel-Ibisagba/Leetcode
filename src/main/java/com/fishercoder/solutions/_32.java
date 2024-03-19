@@ -38,12 +38,12 @@ public class _32 {
                     if (stack.isEmpty()) {
                         continue;
                     } else {
-                        if (stack.peek().equals("(")) {
+                        if ("(".equals(stack.peek())) {
                             stack.pop();
                             stack.push("2");
                         } else {
                             int sum = 0;
-                            while (!stack.isEmpty() && !stack.peek().equals("(")) {
+                            while (!stack.isEmpty() && !"(".equals(stack.peek())) {
                                 sum += Integer.parseInt(stack.pop());
                             }
                             if (!stack.isEmpty()) {
@@ -58,7 +58,7 @@ public class _32 {
             }
             int result = 0;
             while (!stack.isEmpty()) {
-                if (stack.peek().equals("(")) {
+                if ("(".equals(stack.peek())) {
                     stack.pop();
                     result = 0;
                 } else {

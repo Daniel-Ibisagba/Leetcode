@@ -21,9 +21,9 @@ public class _640 {
             int[] result = new int[2];//result[0] is the coefficient for x, result[1] is the coefficient for constants
             String[] tokens = part.split("(?=[+-])");  // ()for match group; ?= for match and include in res; [+-] means + or -;
             for (String token : tokens) {
-                if (token.equals("+x") || token.equals("x")) {
+                if ("+x".equals(token) || "x".equals(token)) {
                     result[0]++;
-                } else if (token.equals("-x")) {
+                } else if ("-x".equals(token)) {
                     result[0]--;
                 } else if (token.contains("x")) {
                     result[0] += Integer.parseInt(token.substring(0, token.length() - 1));

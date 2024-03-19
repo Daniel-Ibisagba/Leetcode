@@ -10,7 +10,7 @@ public class _434 {
             String[] segments = s.split(" ");
             int count = 0;
             for (String seg : segments) {
-                if (seg.equals("")) {
+                if ("".equals(seg)) {
                     continue;
                 }
                 count++;

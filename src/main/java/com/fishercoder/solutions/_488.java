@@ -22,7 +22,7 @@ public class _488 {
 
         private int dfs(String s, int[] handCount) {
             s = removeConsecutive(s);
-            if (s.equals("#")) {
+            if ("#".equals(s)) {
                 return 0;
             }
             int result = maxcount;

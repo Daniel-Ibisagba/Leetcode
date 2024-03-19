@@ -31,9 +31,9 @@ public class _1348 {
                     return null;
                 }
                 int interval;
-                if (freq.equals("minute")) {
+                if ("minute".equals(freq)) {
                     interval = 60;
-                } else if (freq.equals("hour")) {
+                } else if ("hour".equals(freq)) {
                     interval = 60 * 60;
                 } else {
                     interval = 60 * 60 * 24;

@@ -58,7 +58,7 @@ public class _1415 {
             List<String> newHappyStrings = new ArrayList<>();
             for (String str : happyStrings) {
                 for (char c : chars) {
-                    if (str.equals("") || str.charAt(str.length() - 1) != c) {
+                    if ("".equals(str) || str.charAt(str.length() - 1) != c) {
                         StringBuilder newSb = new StringBuilder(str);
                         newSb.append(c);
                         newHappyStrings.add(newSb.toString());

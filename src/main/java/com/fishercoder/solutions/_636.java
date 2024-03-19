@@ -25,7 +25,7 @@ public class _636 {
                     result[stack.peek()] += Integer.parseInt(parts[2]) - prevTime;
                 }
                 prevTime = Integer.parseInt(parts[2]);
-                if (parts[1].equals("start")) {
+                if ("start".equals(parts[1])) {
                     stack.addFirst(Integer.parseInt(parts[0]));//i.e. stack.push()
                 } else {
                     prevTime++;

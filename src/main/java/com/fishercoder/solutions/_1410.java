@@ -48,22 +48,22 @@ public class _1410 {
                 if (text.charAt(i) != '&') {
                     sb.append(text.charAt(i));
                 } else {
-                    if (i + 7 <= text.length() && text.substring(i, i + 7).equals("&frasl;")) {
+                    if (i + 7 <= text.length() && "&frasl;".equals(text.substring(i, i + 7))) {
                         sb.append("/");
                         i += 6;
-                    } else if (i + 6 <= text.length() && text.substring(i, i + 6).equals("&quot;")) {
+                    } else if (i + 6 <= text.length() && "&quot;".equals(text.substring(i, i + 6))) {
                         sb.append("\"");
                         i += 5;
-                    } else if (i + 6 <= text.length() && text.substring(i, i + 6).equals("&apos;")) {
+                    } else if (i + 6 <= text.length() && "&apos;".equals(text.substring(i, i + 6))) {
                         sb.append("'");
                         i += 5;
-                    } else if (i + 5 <= text.length() && text.substring(i, i + 5).equals("&amp;")) {
+                    } else if (i + 5 <= text.length() && "&amp;".equals(text.substring(i, i + 5))) {
                         sb.append("&");
                         i += 4;
-                    } else if (i + 4 <= text.length() && text.substring(i, i + 4).equals("&gt;")) {
+                    } else if (i + 4 <= text.length() && "&gt;".equals(text.substring(i, i + 4))) {
                         sb.append(">");
                         i += 3;
-                    } else if (i + 4 <= text.length() && text.substring(i, i + 4).equals("&lt;")) {
+                    } else if (i + 4 <= text.length() && "&lt;".equals(text.substring(i, i + 4))) {
                         sb.append("<");
                         i += 3;
                     } else {
