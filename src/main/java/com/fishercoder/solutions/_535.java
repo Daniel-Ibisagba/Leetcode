@@ -1,5 +1,6 @@
 package com.fishercoder.solutions;
 
+import java.security.SecureRandom;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -64,7 +65,7 @@ public class _535 {
          * Use a random number
          */
         Map<Integer, String> map = new HashMap<>();
-        Random random = new Random();
+        Random random = new SecureRandom();
         public static final String PREFIX = "http://tinyurl/";
 
         // Encodes a URL to a shortened URL.
@@ -96,7 +97,7 @@ public class _535 {
         Map<String, String> map = new HashMap<>();
         public static final String PREFIX = "http://tinyurl/";
         public static final int FIXED_LENGTH = 7;
-        Random random = new Random();
+        Random random = new SecureRandom();
         String alphabet = "0123456789abcdefghijklmnopgrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
         // Encodes a URL to a shortened URL.
