@@ -1,6 +1,7 @@
 package com.fishercoder.solutions;
 
 import com.fishercoder.common.classes.ListNode;
+import java.security.SecureRandom;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,7 +18,7 @@ public class _382 {
          */
         public Solution(ListNode head) {
             map = new HashMap();
-            rand = new Random();
+            rand = new SecureRandom();
             int i = 0;
             while (head != null) {
                 map.put(i++, head);
